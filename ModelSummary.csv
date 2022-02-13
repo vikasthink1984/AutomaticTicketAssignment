@@ -1,0 +1,14 @@
+,Algorithm,Accuracy Score,Model Training Parameters
+0,Binary classification: Logistic Regression,85%,No Parameters
+0,Binary classification: SVM,86%,No Parameters
+0,Binary classification: Random Forest,86%,No Parameters
+0,Binary classification: Bidirectional LSTM,78%,"Dropout, Dense/hidden layer with Relu, Sigmoid, loss=Binary_crossentropy, Adam optimizer"
+0,Multiclass classification: SVM;,70%,"Penalty=L1, dual=False; loss=squared_hinge"
+0,Multiclass classification: Random Forest,67%,max_depth=20; criterion=friedman_mse; min_samples_leaf=5; max_features=sqrt
+0,Multiclass classification: Multinomial Naive Bayes,65%,alpha=1.0;
+0,Multiclass classification: Bidirectional LSTM,56%,"SpatialDropout(0.2), categorical_crossentropy, Adam optimizer;"
+0,Multiclass classification: Grid Search with Bidirectional LSTM,56%,"SpatialDropout(0.2), binary_crossentropy, Adam optimizer; activation=relu"
+0,Multiclass classification: Grid Search with Logistic Regression,85%,"Cross validation = 2; solver = newton-cg, lbf gs, sag; multi_class:[multinomial,auto]; penalty: [l2]"
+0,Multiclass classification: Grid Search with KNN Classifier,70%,"Cross validation = 2; algorithm: [auto,brute],n_jobs:[-1], n_neighbors: [2,3,5]"
+0,Multiclass classification: Grid Search with Decision Tree Classifier,72%,"Cross validation = 2; criterion: [gini,entropy],max_depth: [3,5,7], max_features:[auto,log2]"
+0,Binary classification: State Of ART BERT,89%,"preprocess_mode=bert, lang=en, maxlen=75"
